@@ -1,4 +1,4 @@
-// BTVN-1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// BTVN-2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -8,16 +8,28 @@ using namespace std;
 int main()
 {
     std::cout << "Hello World!\n";
-
-    int x = 5;
-    int y = 20;
-    cout << "max(x, y)";
-
-    cin.ignore(1000, '\n');
-
-    cout << "min(5, 20)";
-
+    int a;
+    int b;
+    double nghiem;
+    cout << "enter a = ";
+    cin >> a;
+    cout << "enter b = ";
+    cin >> b;
+    if (a == 0) {
+        if (b == 0) {
+            cout << "infinitely many solutions" << endl;
+        }
+        else {
+            cout << "the equation has no solution" << endl;
+        }
+    }
+    else {
+        nghiem = (double)-b / a;
+        cout << "The equation that has a solution is: " << nghiem << endl;
+    }
+    return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
