@@ -1,6 +1,7 @@
 // BTVN-1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <cmath>
 #include <iostream>
 
 using namespace std;
@@ -9,13 +10,24 @@ int main()
 {
     std::cout << "Hello World!\n";
 
-    int x = 5;
-    int y = 20;
-    cout << "max(x, y)";
+	int x;
+	int y;
+	cout << " Enter two number randomly";
+	cin >> x;
+	cin >> y;
 
-    cin.ignore(1000, '\n');
-
-    cout << "min(5, 20)";
+	if (x > y) {
+		cout << x << " is the maximum number" << endl;
+		cout << y << " is the minimum number" << endl;
+	}
+	else if (x < y) {
+		cout << y << " is the maximum number" << endl;
+		cout << x << " is the minimum number" << endl;
+	}
+	else {
+		cout << " Error" << endl;
+	}
+	return 0;
 
 }
 
